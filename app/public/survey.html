@@ -13,7 +13,9 @@
     .submitButton{
     width: 1111px;
 }
-
+.nameInput {
+    width: 100%;
+}
 
 </style>
 
@@ -26,210 +28,208 @@
             </h1>
         </div>
         <hr>
-        <div class="row">
-            <form>
-                <h4><strong>About You</strong></h4>
-                <div class="form-group">
+        <form action="http://localhost:8080/thanks" method="POST">
+            <h2><strong>About You</strong></h2>
+            <div class="row">
+                <div class="form-group nameInput">
                     <label for="exampleInputEmail1">Name (required)</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter name">
-                    <small id="emailHelp" class="form-text text-muted"></small>
+                    <input type="email" class="form-control" id="nameID" aria-describedby="emailHelp" placeholder="Enter name">
+
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                <div class="custom-file">
+                    <label class="custom-file-label" for="customFile">Upload your photo</label>
+                    <input type="file" class="custom-file-input" id="customFile">
                 </div>
-            </form>
-        </div>
-        <hr>
-        <div class="row">
-            <h3>Question 1</h3>
-        </div>
-        <p>I love to watch a good horror movie.</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <h3>Question 2</h3>
-        </div>
-        <p>I rather chill at the pool than get all sandy at the beach.</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+            <hr>
+            <div class="row">
+                <h3>Question 1</h3>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <h3>Question 3</h3>
-        </div>
-        <p>I won't eat ice cream because it is too fattening.</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+            <h4>I love to watch a good horror movie.</h4>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select an Option</label>
+                <select class="form-control" id="question1">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree</option>
+                </select>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <h3>Question 4</h3>
-        </div>
-        <p>I love to go to Thai restaurants.</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+            <hr>
+            <div class="row">
+                <h3>Question 2</h3>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <h3>Question 5</h3>
-        </div>
-        <p>I rather get a root canal than listen to Post Malone.</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+            <h4>I rather chill at the pool than get all sandy at the beach.</h4>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select an Option</label>
+                <select class="form-control" id="question2">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree</option>
+                </select>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <h3>Question 6</h3>
-        </div>
-        <p>I sometimes enjoy driving like a maniac.</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+            <hr>
+            <div class="row">
+                <h3>Question 3</h3>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <h3>Question 7</h3>
-        </div>
-        <p>I love to read a good novel.</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+            <h4>I won't eat ice cream because it is too fattening.</h4>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select an Option</label>
+                <select class="form-control" id="question3">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree</option>
+                </select>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <h3>Question 8</h3>
-        </div>
-        <p>I prefer to Netflix and chill rather than go to a night club.</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+            <hr>
+            <div class="row">
+                <h3>Question 4</h3>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <h3>Question 9</h3>
-        </div>
-        <p>Dubstep is fun to dance to.</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+            <h4>I love to go to Thai restaurants.</h4>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select an Option</label>
+                <select class="form-control" id="question4">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree</option>
+                </select>
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <h3>Question 10</h3>
-        </div>
-        <p>The best time to listen to The Misfits is around halloween.</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+            <hr>
+            <div class="row">
+                <h3>Question 5</h3>
             </div>
-        </div>
-        <hr>
+            <h4>I rather get a root canal than listen to Post Malone.</h4>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select an Option</label>
+                <select class="form-control" id="question5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree</option>
+                </select>
+            </div>
+            <hr>
+            <div class="row">
+                <h3>Question 6</h3>
+            </div>
+            <h4>I sometimes enjoy living dangerously.</h4>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select an Option</label>
+                <select class="form-control" id="question6">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree</option>
+                </select>
+            </div>
+            <hr>
+            <div class="row">
+                <h3>Question 7</h3>
+            </div>
+            <h4>I love to read a good novel.</h4>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select an Option</label>
+                <select class="form-control" id="question7">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree</option>
+                </select>
+            </div>
+            <hr>
+            <div class="row">
+                <h3>Question 8</h3>
+            </div>
+            <h4>I prefer to Netflix and chill rather than go to a night club.</h4>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select an Option</label>
+                <select class="form-control" id="question8">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree</option>
+                </select>
+            </div>
+            <hr>
+            <div class="row">
+                <h3>Question 9</h3>
+            </div>
+            <h4>Dubstep is fun to dance to.</h4>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select an Option</label>
+                <select class="form-control" id="question9">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree</option>
+                </select>
+            </div>
+            <hr>
+            <div class="row">
+                <h3>Question 10</h3>
+            </div>
+            <h4>The best time to listen to The Misfits is around halloween.</h4>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select an Option</label>
+                <select class="form-control" id="question10">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree</option>
+                </select>
+            </div>
+            <hr>
+        </form>
     </div>
     <div class="container">
         <button type="submit" class="btn submitButton btn-primary"> √ Submit </button>
         <hr>
-        <a href="#">API Friends List </a>|
-        <a href="#">GitHub Repo</a>
-      
+        <a href="data/friends">API Friends List </a>|
+        <a href="https://github.com/bmadeira7/friendFinder" target="blank">GitHub Repo</a>
     </div>
+
+    <script type="text/javascript">
+
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            var newFriend = {
+                name: $("#nameID").val().trim(),
+                photo: $("#customFile").val().trim(),
+                scores: [
+                    $("#question1").val(),
+                    $("#question2").val(),
+                    $("#question3").val(),
+                    $("#question4").val(),
+                    $("#question5").val(),
+                    $("#question6").val(),
+                    $("#question7").val(),
+                    $("#question8").val(),
+                    $("#question9").val(),
+                    $("#question10").val(),
+                ]
+            };
+
+            $.post("../app/data/friends", newFriend,
+                (function (data) {
+                    console.log(data);
+                    alert("Adding friend");
+                }));
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
