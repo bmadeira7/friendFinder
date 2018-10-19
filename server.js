@@ -1,16 +1,12 @@
 var express = require('express')
-var http = require("http");
-var path = require('path')
-var fs = require("fs");
 
-var friends = require("./app/data/friends.js")
 var apiRoute = require("./app/routing/apiRoutes.js")
 var htmlRoute = require("./app/routing/htmlRoutes.js")
 
 
-// Sets up the Express App
-// =============================================================
+// dictates which port we are on, the 1st PORT is heroku
 var PORT = process.env.PORT || 8080;
+// Sets up the Express App variable
 var app = express();
 
 
@@ -19,15 +15,16 @@ var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//here i tried to make my cityScape.png image available
+//here i tried to make my cityScape.png image available. no luck yet.
 app.use(express.static("public"));
 app.use(express.static("images"));
 
-
+//to run the apiRoute function
 apiRoute(app);
+//to run the htmlRoute function
 htmlRoute(app);
 
-
+//determines which port we are listening on
 app.listen(PORT, function () {
     console.log("server is listenin' on port:" + PORT);
 })

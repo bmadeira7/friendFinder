@@ -1,10 +1,9 @@
 //this page will send back visual webpage
 
 var express = require('express')
-var http = require("http");
 var path = require('path')
-var fs = require("fs");
-// var friends = require("./app/data/friends.js")
+
+
 
 // Sets up the Express App
 // =============================================================
@@ -18,7 +17,7 @@ app.use(express.json());
 function htmlRoute(app){
 
     
-    //not sure about this part below... what else do i need to do in this page?
+    //express get requests
     app.get('/survey', function (req, res) {
         res.sendFile(path.join(__dirname, "/../public/survey.html"))
     })
