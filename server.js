@@ -6,7 +6,7 @@ var fs = require("fs");
 var friends = require("./app/data/friends.js")
 var apiRoute = require("./app/routing/apiRoutes.js")
 var htmlRoute = require("./app/routing/htmlRoutes.js")
-// var bodyParser = require('body-parser')
+
 
 // Sets up the Express App
 // =============================================================
@@ -19,8 +19,9 @@ var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
+//here i tried to make my cityScape.png image available
 app.use(express.static("public"));
+app.use(express.static("images"));
 
 
 apiRoute(app);
