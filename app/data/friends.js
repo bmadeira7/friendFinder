@@ -22,10 +22,10 @@
 
 // Once you've found the current user's most compatible friend, display the result as a modal pop-up. The modal should display both the name and picture of the closest match.
 
-
+//math.Abs()
 var friendsList =
     [{
-        name: "Ahmed",
+        name: "Ralph",
         photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         scores: [
             5,
@@ -39,8 +39,23 @@ var friendsList =
             4,
             1
         ]
+    },
+    {
+        name: "Cristy",
+        photo: "https://images.pexels.com/photos/160699/girl-dandelion-yellow-flowers-160699.jpeg?auto=compress&cs=tinysrgb&h=350",
+        scores: [
+            3,
+            1,
+            3,
+            4,
+            3,
+            1,
+            2,
+            5,
+            4,
+            5
+        ]
     }
-
     ]
 
 
