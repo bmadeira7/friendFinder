@@ -55,7 +55,55 @@ var friendsList =
             4,
             5
         ]
-    }
+    },
+    {
+        name: "Little Ricky",
+        photo: "https://www.askideas.com/media/28/Skinny-Tiny-Man-Weightlifting-Funny-Image.jpg",
+        scores: [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ]
+    },
+    {
+        name: "Big Papa Flabberty",
+        photo: "http://photos1.blogger.com/blogger/5562/1542/1600/DustRhodes.1.jpg",
+        scores: [
+            3,
+            4,
+            1,
+            1,
+            1,
+            1,
+            2,
+            5,
+            1,
+            1
+        ]
+    },
+    {
+        name: "Old Man Winston",
+        photo: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/02/05/08/Antonio-Docampo-Garcia.jpg?w968h681",
+        scores: [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ]
+    },
     ]
 
 
